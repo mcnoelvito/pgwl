@@ -9,7 +9,7 @@ class MapController extends Controller
     public function index()
     {
         $data = [
-            "title" => "Peta Laravel PGWL",
+            "title" => "Explore KWB with Mine",
         ];
         if (Auth()->check()) {
 
