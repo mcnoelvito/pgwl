@@ -38,11 +38,11 @@
                             <i class="fa-solid fa-table"></i></i></i> Data Tables
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="nav-link" href="{{ route('table-point') }}">Table Point</a></li>
+                          <li><a class="nav-link" href="{{ route('table-point') }}">Data Titik Lokasi Wisata</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="nav-link" href="{{ route('table-polyline') }}">Table Polyline</a></li>
+                          <li><a class="nav-link" href="{{ route('table-polyline') }}">Data Jaringan Jalan</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="nav-link" href="{{ route('table-polygon') }}">Table Polygon</a></li>
+                          <li><a class="nav-link" href="{{ route('table-polygon') }}">Data Kawasan Wisata</a></li>
                         </ul>
                       </li>
 

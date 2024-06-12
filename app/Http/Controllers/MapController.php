@@ -24,7 +24,7 @@ class MapController extends Controller
     public function table()
     {
         $data = [
-            "title" => "Table",
+            "title" => "Data",
         ];
         return view('table', $data);
     }

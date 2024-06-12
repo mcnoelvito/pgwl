@@ -233,7 +233,7 @@ class PolygonController extends Controller
         $polygons = $this->polygon->all();
 
         $data = [
-            'title' => 'Table Polygons',
+            'title' => 'Explore KWB with Mine',
             'polygons' => $polygons
         ];
 

@@ -233,7 +233,7 @@ class PolylineController extends Controller
         $polylines = $this->polyline->all();
 
         $data = [
-            'title' => 'Table Polylines',
+            'title' => 'Explore KWB with Mine',
             'polylines' => $polylines
         ];
 

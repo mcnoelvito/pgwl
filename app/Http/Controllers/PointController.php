@@ -228,7 +228,7 @@ class PointController extends Controller
         $points = $this->point->points();
 
         $data = [
-            'title' => 'Table Point',
+            'title' => 'Explore KWB with Mine',
             'points' => $points
         ];
 
