@@ -352,5 +352,21 @@
         };
 
         var layerControl = L.control.layers(null, overlayMaps).addTo(map);
+
+        //Watermark
+        L.Control.Watermark = L.Control.extend({
+            onAdd: function (map) {
+                var img = L.DomUtil.create('img');
+                img.src = 'storage/2.png';
+                img.style.width = '100px';
+                return img;
+            }
+        });
+
+        L.control.watermark = function (opts) {
+            return new L.Control.Watermark(opts);
+        }
+        L.control.watermark({ position: 'bottomright' }).addTo(map);
+
     </script>
 @endsection
