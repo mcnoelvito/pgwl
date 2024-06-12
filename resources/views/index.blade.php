@@ -135,11 +135,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label">Image</label>
-                            <input type="file" class="form-control" id="image_polygon" name="image"onchange="document.getElementById('preview-image-point').src=window.URL.createObjectURL
+                            <input type="file" class="form-control" id="image_polygon" name="image"onchange="document.getElementById('preview-image-polygon').src=window.URL.createObjectURL
                                                                                                 (this.files[0])">
 
                             <div class="mb-3">
-                                <img src="" alt="Preview" id="preview-image-point" class="img-thumbnail"
+                                <img src="" alt="Preview" id="preview-image-polygon" class="img-thumbnail"
                                     width="400">
                             </div>
                         </div>
@@ -161,9 +161,9 @@
     <script src="https://unpkg.com/terraformer-wkt-parser@1.1.2/terraformer-wkt-parser.js"></script>
     <script>
         // Membuat peta menggunakan Leaflet
-        var map = L.map('map').setView([-7.7713, 110.3770], 13);
+        var map = L.map('map').setView([-7.87115, 112.527], 13);
 
-        // Menambahkan tile layer (misalnya dari OpenStreetMap)
+        //Basemap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);

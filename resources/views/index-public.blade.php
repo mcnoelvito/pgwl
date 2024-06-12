@@ -28,7 +28,7 @@
     <script src="https://unpkg.com/terraformer-wkt-parser@1.1.2/terraformer-wkt-parser.js"></script>
     <script>
         // Map
-        var map = L.map('map').setView([-7.7956, 110.3695], 13);
+        var map = L.map('map').setView([-7.87115, 112.527], 13);
 
         //Basemap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
