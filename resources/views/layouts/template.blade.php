@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="C:\Users\Hp\Documents\laravel\pgwl\storage\KWB.png" width="50px" height="50px" alt="LogoKWB">{{$title}}<i class="fa-solid fa-compass"></i></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-compass"></i>{{$title}}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
