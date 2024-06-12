@@ -90,7 +90,7 @@
           <p>NIM: 22/497277/SV/21111</p>
           <p>Prodi: D4 Sistem Informasi Geografis</p>
           <p>Kelas: PGWL A</p>
-          <p>Copyright 2024</p>
+          <p>Tahun: 2024</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
