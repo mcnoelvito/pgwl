@@ -14,6 +14,9 @@ WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 * Fontawesome
 
 **Sumber Data :**
+* Data *Shapefile* Rupabumi Indonesia Kota Batu
+
+**Tangkapan Layar :** 
 
 
 **Didukung Oleh:**
