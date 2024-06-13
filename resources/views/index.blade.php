@@ -246,7 +246,7 @@
             });
         // Define a custom icon
         var customIcon = L.icon({
-            iconUrl: '{{ asset('storage/images/travel-and-tourism (1).png') }}', // Path to your custom icon
+            iconUrl: '{{ asset('storage/images/travel-and-tourism.png') }}', // Path to your custom icon
             iconSize: [25, 41], // Size of the icon
             iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
             popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
