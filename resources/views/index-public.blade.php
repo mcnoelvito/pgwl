@@ -126,7 +126,7 @@ var overlayMaps = {
     L.Control.Watermark = L.Control.extend({
             onAdd: function (map) {
                 var img = L.DomUtil.create('img');
-                img.src = 'resources/views/2.png';
+                img.src = '{{ asset('storage/images/2.png') }}';
                 img.style.width = '100px';
                 return img;
             }
