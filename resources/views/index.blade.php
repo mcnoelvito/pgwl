@@ -339,6 +339,7 @@
                 });
             },
         });
+
         $.getJSON("{{ route('api.polygons') }}", function(data) {
             polygon.addData(data);
             map.addLayer(polygon);
@@ -347,6 +348,7 @@
             polygon.addData(data);
             map.addLayer(polygon);
         });
+
 
         //Basemap
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -377,7 +379,7 @@
             "Esri World Street": basemap2,
             "Esri Imagery": basemap3,
             "Stadia Dark Mode": basemap4
-            
+
         };
         var overlayMaps = {
             "Point": point,
