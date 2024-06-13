@@ -14,4 +14,4 @@
 * **Leaflet.js** (**#03A9F4**)
 * Bootstrap (**#5CB85C**)
 * Fontawesome (**#007BFF**)
-![image](https://github.com/mcnoelvito/pgwl/assets/142877018/4ec3c6d2-9cd9-4887-a4fc-dba5426df008)
+
