@@ -348,14 +348,42 @@
             map.addLayer(polygon);
         });
 
+        //Basemap
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+        'Map data 0 <a href="https: //www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }). addTo(map);
+        var basemap1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | <a href="DIVSIG UGM" target="_blank">DIVSIG UGM</a>' //menambahkan nama//
+        });
+        var basemap2 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{ z }/{ y }/{ x }',
+            {
+                attribution: 'Tiles &copy; Esri | <a href="WebGIS Kota Batu" target="_blank">DIVSIG UGM</a>'
+            });
+        var basemap3 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{ z }/{ y }/{ x }',
+            {
+                attribution: 'Tiles &copy; Esri | <a href="WebGIS Kota Batu" target="_blank">DIVSIG UGM</a>'
+            });
+        var basemap4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        });
+        basemap1.addTo(map);
+
         //layer control
+        var baseMaps = {
+            "OpenStreetMap": basemap1,
+            "Esri World Street": basemap2,
+            "Esri Imagery": basemap3,
+            "Stadia Dark Mode": basemap4
+        };
         var overlayMaps = {
             "Point": point,
             "Polyline": polyline,
             "Polygon": polygon
         };
 
-        var layerControl = L.control.layers(null, overlayMaps).addTo(map);
+        var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         //Watermark
         L.Control.Watermark = L.Control.extend({
