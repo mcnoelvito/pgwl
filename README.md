@@ -1,9 +1,7 @@
 ## Explore KWB with Mine 
-WebGIS untuk Mengenal Tempat Wisata di Kota Batu
+WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 
-**Tentang Explore KWB with Mine**
-
-**Explore KWB with Mine** (Baca: Explore Kota Wisata Batu with Michael Noelvito) merupakan sebuah peta interaktif webGIS yang mengajak penggunanya untuk **mengeksplor lebih jauh** destinasi wisata yang ada di Kota Wisata Batu. Kota Batu merupakan sebuah kota di kawasan Malang raya yang sebenarnya sudah **terkenal** sebagai salah satu destinasi wisata favorit khususnya di Jawa Timur.
+**Explore KWB with Mine** *(Baca: Explore Kota Wisata Batu with Michael Noelvito)* merupakan sebuah peta interaktif webGIS yang mengajak penggunanya untuk **mengeksplor lebih jauh** destinasi wisata yang ada di Kota Wisata Batu. Kota Batu merupakan sebuah kota di kawasan Malang raya yang sebenarnya sudah **terkenal** sebagai salah satu destinasi wisata favorit khususnya di Jawa Timur.
 
 **Komponen Pembangun WebGIS**
 
