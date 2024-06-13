@@ -20,15 +20,15 @@ WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 
 **Tangkapan Layar :** 
 Halaman Awal
-![Halaman Awal](Halaman Awal.png)
+![HalamanAwal](Halaman_Awal.png)
 Dasbor Pengguna
 ![Dasbor](Dasbor.png)
 Peta Interaktif
-![Peta Interaktif](Peta Interaktif.png)
+![PetaInteraktif](Peta_Interaktif.png)
 Jendela Pembuatan dan Edit Data Geospasial
-![Edit dan Buat data](Edit dan Buat data.png)
+![EditdanBuatdata](Edit_dan_Buat_data.png)
 Tabel Kumpulan Data Geospasial
-![Tabel Data](Tabel Data.png)
+![Tabel Data](Tabel_Data.png)
 
 **Didukung Oleh:**
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
