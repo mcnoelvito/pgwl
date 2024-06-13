@@ -15,11 +15,20 @@ WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 
 **Sumber Data :**
 * Framework Laravel
-* Data *Shapefile* Rupabumi Indonesia Kota Batu
-* Beberapa Gambar penunjang tempat wisata yang diunduh dari pencarian Google
+* Data *Shapefile* Rupabumi Indonesia Administrasi Kecamatan Kota Batu
+* Beberapa gambar dan informasi penunjang tempat wisata yang diunduh dan disadur dari pencarian Google secara acak
 
 **Tangkapan Layar :** 
-
+Halaman Awal
+![Halaman Awal](Halaman Awal.png)
+Dasbor Pengguna
+![Dasbor](Dasbor.png)
+Peta Interaktif
+![Peta Interaktif](Peta Interaktif.png)
+Jendela Pembuatan dan Edit Data Geospasial
+![Edit dan Buat data](Edit dan Buat data.png)
+Tabel Kumpulan Data Geospasial
+![Tabel Data](Tabel Data.png)
 
 **Didukung Oleh:**
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
