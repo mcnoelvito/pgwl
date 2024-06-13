@@ -174,8 +174,8 @@ class PointController extends Controller
 
         //delete image
         $old_image = $this->point->find($id)->image;
-        if($image_old !=null){
-                unlink('storage/images/'.$image_old);
+        if($old_image !=null){
+                unlink('storage/images/'.$old_image);
             }
         }else{
             $filename = $request->image_old;
