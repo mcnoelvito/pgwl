@@ -168,6 +168,16 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+         // Define a custom icon
+         var customIcon = L.icon({
+            iconUrl: '{{ asset('storage/images/travel-and-tourism.png') }}', // Path to your custom icon
+            iconSize: [25, 41], // Size of the icon
+            iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
+            popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
         // Create a GeoJSON layer for polygon data
         var Batu = L.geoJson(null, {
             style: function(feature) {
@@ -244,15 +254,7 @@
             .catch(error => {
                 console.error('Error loading the GeoJSON file:', error);
             });
-        // Define a custom icon
-        var customIcon = L.icon({
-            iconUrl: '{{ asset('storage/images/travel-and-tourism.png') }}', // Path to your custom icon
-            iconSize: [25, 41], // Size of the icon
-            iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
-            popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            shadowSize: [41, 41]
-        });
+       
 
 
         /* Digitize Function */
