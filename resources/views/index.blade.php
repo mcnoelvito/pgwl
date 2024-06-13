@@ -244,6 +244,16 @@
             .catch(error => {
                 console.error('Error loading the GeoJSON file:', error);
             });
+        // Define a custom icon
+        var customIcon = L.icon({
+            iconUrl: '{{ asset('storage/images/travel-and-tourism (1).png') }}', // Path to your custom icon
+            iconSize: [25, 41], // Size of the icon
+            iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
+            popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
 
         /* Digitize Function */
         var drawnItems = new L.FeatureGroup();
@@ -290,19 +300,14 @@
                 $("#PolygonModal").modal('show');
                 console.log("Create " + type);
             } else if (type === 'marker') {
-                marker = L.marker(latLng, {
-                markerOptions: {
-                    icon: L.icon({
-                    iconUrl: "travel-and-tourism (1).png",
-                    iconSize: [32, 32] // Size of the icon
-                })
-            }
-            })
+
                 // Set value geometry to input geom
                 $("#geom_point").val(objectGeometry);
 
                 // Show modal
                 $("#PointModal").modal('show');
+                // Set the custom icon for the marker
+                layer.setIcon(customIcon);
             } else {
                 console.log('undefined');
             }
