@@ -1,4 +1,5 @@
-## Explore KWB with Mine WebGIS: Mengenal Tempat Wisata di Kota Batu
+## Explore KWB with Mine 
+WebGIS untuk Mengenal Tempat Wisata di Kota Batu
 
 **Tentang Explore KWB with Mine**
 
