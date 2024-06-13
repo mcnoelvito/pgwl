@@ -20,7 +20,7 @@ WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 
 **Tangkapan Layar :** 
 Halaman Awal
-[Halaman Awal](Halaman Awal.png)
+![Halaman Awal](Halaman Awal.png)
 Dasbor Pengguna
 ![Dasbor](Dasbor.png)
 Peta Interaktif
