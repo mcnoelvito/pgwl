@@ -343,6 +343,10 @@
             polygon.addData(data);
             map.addLayer(polygon);
         });
+        $.getJSON("{{ asset('storage/Administrasi_Batu.json') }}", function(data) {
+            polygon.addData(data);
+            map.addLayer(polygon);
+        });
 
         //layer control
         var overlayMaps = {
