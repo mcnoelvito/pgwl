@@ -23,6 +23,7 @@
             </div>
 
             <div class="col-md-6 gx-5 mb-4">
+            <div class="mb-3">
               <h4><strong>Sekilas Pandang</strong></h4>
               <p class="text-muted">
                 Kota Batu merupakan sebuah kota di kawasan Malang raya yang sebenarnya sudah terkenal sebagai salah satu destinasi wisata favorit
@@ -30,6 +31,8 @@
                 Maka dari itu melalui peta interaktif yang mudah untuk diedit,
                 para pengguna dapat membantu menambahkan berbagai destinasi wisata baru yang mungkin belum terjamah oleh pembuat webGIS :).
               </p>
+            </div>
+            <div class="mb-3">
               <p><strong>Kondisi Geografis</strong></p>
               <p class="text-muted">
                 Secara geografis Lawang terletak di pegunungan dan dikelilingi Gunung Arjuno, Gunung Penanggungan, Gunung Kawi dan Gunung Panderman.
