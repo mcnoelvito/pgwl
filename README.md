@@ -24,7 +24,7 @@ WebGIS Interaktif untuk Mengenal Tempat Wisata di Kota Batu
 ![PetaInteraktif](Peta_Interaktif.png)
 * Jendela Pembuatan dan Edit Data Geospasial
 ![EditdanBuatdata](Edit_dan_Buat_data.png)
-* Tabel Kumpulan Data Geospasial
+* Tabel Kumpulan Informasi Data Geospasial
 ![Tabel Data](Tabel_Data.png)
 
 **Didukung Oleh:**
