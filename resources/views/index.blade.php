@@ -21,7 +21,7 @@
 @section('content')
     <div id="map"></div>
 
-    <!-- Modal Create Point -->
+    {{-- Modal Create Point --}}
     <div class="modal fade" id="PointModal" tabindex="-1" aria-labelledby="PointModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -290,7 +290,14 @@
                 $("#PolygonModal").modal('show');
                 console.log("Create " + type);
             } else if (type === 'marker') {
-
+                marker = L.marker(latLng, {
+                markerOptions: {
+                    icon: L.icon({
+                    iconUrl: "travel-and-tourism (1).png",
+                    iconSize: [32, 32] // Size of the icon
+                })
+            }
+            })
                 // Set value geometry to input geom
                 $("#geom_point").val(objectGeometry);
 
