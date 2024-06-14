@@ -296,6 +296,7 @@
             drawnItems.addLayer(layer);
         });
 
+
         /* GeoJSON Point */
         var point = L.geoJson(null, {
             onEachFeature: function(feature, layer) {
@@ -337,6 +338,7 @@
             point.addData(data);
             map.addLayer(point);
         });
+
         /* GeoJSON Polyline */
         var polyline = L.geoJson(null, {
             onEachFeature: function(feature, layer) {
@@ -460,6 +462,8 @@
 
         var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
+
+
         //Watermark
         L.Control.Watermark = L.Control.extend({
             onAdd: function (map) {
@@ -469,6 +473,32 @@
                 return img;
             }
         });
+
+        /*Plugin Search */
+        var searchControl = new L.Control.Search({
+            position: "topleft",
+            layer: wfsgeoserver, //Nama variabel layer
+            propertyName: "kecamatan", //Field untuk pencarian
+            marker: false,
+            moveToLocation: function (latlng, title, map) {
+                var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+                map.setView(latlng, zoom);
+            },
+        });
+        searchControl
+            .on("search:locationfound", function (e) {
+                e.layer.setStyle({
+                    fillColor: "#ffff00",
+                    color: "#0000ff",
+                });
+            })
+            .on("search:collapse", function (e) {
+                featuresLayer.eachLayer(function (layer) {
+                    featuresLayer.resetStyle(layer);
+                });
+            });
+
+
 
         L.control.watermark = function (opts) {
             return new L.Control.Watermark(opts);

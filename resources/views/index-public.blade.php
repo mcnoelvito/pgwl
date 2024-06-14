@@ -136,10 +136,7 @@
     },
 });
 
-                    $.getJSON("{{ route('api.points')}}", function (data) {
-                        point.addData(data);
-                        map.addLayer(point);
-                    });
+
 
 
         /* GeoJSON Polyline */
@@ -245,6 +242,8 @@
             return new L.Control.Watermark(opts);
         }
         L.control.watermark({ position: 'bottomright' }).addTo(map);
+
+
 
 
 </script>
