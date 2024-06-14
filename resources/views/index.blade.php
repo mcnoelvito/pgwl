@@ -168,7 +168,13 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-
+        // Define custom icon
+        var customIcon = L.icon({
+            iconUrl: "{{ asset('travel-and-tourism.png') }}", // Pastikan ini adalah path yang benar ke gambar ikon Anda
+            iconSize: [32, 32], // Ukuran ikon, sesuaikan dengan ukuran gambar Anda
+            iconAnchor: [16, 32], // Titik anchor dari ikon (biasanya tengah bawah)
+            popupAnchor: [0, -32] // Titik anchor popup relatif terhadap ikon
+        });
 
         // Create a GeoJSON layer for polygon data
         var Batu = L.geoJson(null, {
@@ -299,7 +305,10 @@
 
         /* GeoJSON Point */
         var point = L.geoJson(null, {
-            onEachFeature: function(feature, layer) {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {icon: customIcon});
+    },
+    onEachFeature: function(feature, layer) {
                 var popupContent = "Nama: " + feature.properties.name + "<br>" +
                     "Deskripsi: " + feature.properties.description + "<br>" +
                     "Foto: <img src='{{ asset('storage/images/') }}/" + feature.properties.image +
