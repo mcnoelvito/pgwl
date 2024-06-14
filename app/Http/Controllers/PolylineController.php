@@ -98,10 +98,10 @@ class PolylineController extends Controller
     ];
         //create polyline
     if(!$this->polyline->create($data)){
-        return redirect()->back()->with('error', 'failed to create polyline');
+        return redirect()->back()->with('error', 'Gagal Membuat Garis');
         }
         //redirect to Map
-        return redirect()->back()->with('success', 'polyline created successfully');
+        return redirect()->back()->with('success', 'Garis Berhasil Dibuat');
 
     }
 
@@ -200,10 +200,10 @@ class PolylineController extends Controller
     ];
         //update polyline
     if(!$this->polyline->find($id)->update($data)){
-        return redirect()->back()->with('error', 'failed to update polyline');
+        return redirect()->back()->with('error', 'Gagal Memperbarui Garis');
         }
         //redirect to Map
-        return redirect()->back()->with('success', 'polyline updated successfully');
+        return redirect()->back()->with('success', 'Garis Berhasil Diperbarui');
     }
 
     /**
@@ -216,7 +216,7 @@ class PolylineController extends Controller
 
         // Delete Polyline
         if (!$this->polyline->destroy($id)) {
-            return redirect()->back()->with('error', 'Failed to delete polyline');
+            return redirect()->back()->with('error', 'Gagal Menghapus Garis');
         }
 
         // delete image
@@ -225,7 +225,7 @@ class PolylineController extends Controller
         }
 
         // Redirect to Map
-        return redirect()->back()->with('success', 'Polyline deleted successfully');
+        return redirect()->back()->with('success', 'Garis Berhasil Dihapus');
     }
 
     public function table()

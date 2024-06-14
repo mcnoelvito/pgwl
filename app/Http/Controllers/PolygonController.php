@@ -98,10 +98,10 @@ class PolygonController extends Controller
     ];
         //create polygon
     if(!$this->polygon->create($data)){
-        return redirect()->back()->with('error', 'failed to create polygon');
+        return redirect()->back()->with('error', 'Gagal Membuat Poligon');
         }
         //redirect to Map
-        return redirect()->back()->with('success', 'polygon created successfully');
+        return redirect()->back()->with('success', 'Poligon Berhasil Dibuat');
 
     }
 
@@ -200,10 +200,10 @@ class PolygonController extends Controller
     ];
         //update polygon
     if(!$this->polygon->find($id)->update($data)){
-        return redirect()->back()->with('error', 'failed to update polygon');
+        return redirect()->back()->with('error', 'Gagal Memperbarui Poligon');
         }
         //redirect to Map
-        return redirect()->back()->with('success', 'polygon updated successfully');
+        return redirect()->back()->with('success', 'Poligon Berhasil Diperbarui');
     }
 
     /**
@@ -216,7 +216,7 @@ class PolygonController extends Controller
 
         // Delete Polygon
         if (!$this->polygon->destroy($id)) {
-            return redirect()->back()->with('error', 'Failed to delete polygon');
+            return redirect()->back()->with('error', 'Gagal Menghapus Poligon');
         }
 
         // delete image
@@ -225,7 +225,7 @@ class PolygonController extends Controller
         }
 
         // Redirect to Map
-        return redirect()->back()->with('success', 'Polygon deleted successfully');
+        return redirect()->back()->with('success', 'Poligon Berhasil Dihapus');
     }
 
     public function table()

@@ -89,11 +89,11 @@ class PointController extends Controller
 
         //Create Point
         if(!$this->point->create($data)) {
-            return redirect()->back()->with('error', 'failed to create point');
+            return redirect()->back()->with('error', 'Gagal Membuat Titik');
         }
 
         //redirect to map
-        return redirect()->back()->with('success', 'Point created successfully');
+        return redirect()->back()->with('success', 'Titik Berhasil Dibuat');
 
 
     }
@@ -190,11 +190,11 @@ class PointController extends Controller
 
         //Update Point
         if(!$this->point->find($id)->update($data)) {
-            return redirect()->back()->with('error', 'failed to update point');
+            return redirect()->back()->with('error', 'Gagal Memperbarui Titik');
         }
 
         //redirect to map
-        return redirect()->back()->with('success', 'Point updated successfully');
+        return redirect()->back()->with('success', 'Titik Berhasil Diperbaharui');
 
 
     }
@@ -211,7 +211,7 @@ class PointController extends Controller
 
         //delete point
         if(!$this->point->destroy($id)) {
-            return redirect()->back()->with('error', 'Failed to delete point');
+            return redirect()->back()->with('error', 'Gagal Menghapus Titik');
         }
 
         //delete image
@@ -220,7 +220,7 @@ class PointController extends Controller
         }
 
         //redirect to map
-        return redirect()->back()->with('success', 'Point delete successfuly');
+        return redirect()->back()->with('success', 'Titik Berhasil Dihapus');
     }
 
     public function table()
