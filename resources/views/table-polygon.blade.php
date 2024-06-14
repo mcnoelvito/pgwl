@@ -14,7 +14,6 @@
                         <td>No</td>
                         <td>Name</td>
                         <td>Description</td>
-
                         <td>Image</td>
                         <td>Created at</td>
                     </tr>
