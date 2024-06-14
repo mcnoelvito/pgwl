@@ -99,18 +99,7 @@
                                 // Fungsi ketika objek diklik
                                 layer.bindPopup(content).openPopup();
                             },
-                            mouseover: function(e) {
-                                // Tidak ada perubahan warna saat mouse over
-                                layer.bindPopup("Kecamatan : " + feature.properties.WADMKC, {
-                                    sticky: false
-                                }).openPopup();
-                            },
-                            mouseout: function(e) {
-                                // Fungsi ketika mouse keluar dari objek
-                                layer.resetStyle(e
-                                    .target); // Mengembalikan gaya garis ke gaya awal
-                                map.closePopup(); // Menutup popup
-                            },
+
                         });
                     }
 
