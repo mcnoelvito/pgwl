@@ -37,7 +37,7 @@
 
         // Define custom icon
         var customIcon = L.icon({
-            iconUrl: "{{ asset('travel-and-tourism.png') }}", // Pastikan ini adalah path yang benar ke gambar ikon Anda
+            iconUrl: "{{ asset('storage/images/travel-and-tourism.png') }}", // Pastikan ini adalah path yang benar ke gambar ikon Anda
             iconSize: [32, 32], // Ukuran ikon, sesuaikan dengan ukuran gambar Anda
             iconAnchor: [16, 32], // Titik anchor dari ikon (biasanya tengah bawah)
             popupAnchor: [0, -32] // Titik anchor popup relatif terhadap ikon
