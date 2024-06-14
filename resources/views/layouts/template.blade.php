@@ -31,11 +31,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}"><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}"><i class="fa-solid fa-house"></i> Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-table"></i></i></i> Data Tables
+                            <i class="fa-solid fa-table"></i></i></i> Tabel Data
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="nav-link" href="{{ route('table-point') }}">Data Titik Lokasi Wisata</a></li>
@@ -52,20 +52,20 @@
 
                     @if (Auth::check())
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+                        <a class="nav-link" href="{{ route('dashboard') }}"><i class="fa-solid fa-gauge"></i>Dasbor</a>
                     </li>
 
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                     <li class="nav-item">
                         <button class="nav-link" type="submit" style="color: red">
-                            <i class="fa-solid fa-right-to-bracket"></i> Logout
+                            <i class="fa-solid fa-right-to-bracket"></i> Keluar
                         </button>
                     </li>
                     </form>
                     @else
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route ('login')}}"><i class="fa-solid fa-right-to-bracket"></i><Leg></Leg>Login</a>
+                        <a class="nav-link" href="{{ route ('login')}}"><i class="fa-solid fa-right-to-bracket"></i><Leg></Leg> Masuk</a>
                     </li>
                     @endif
 
