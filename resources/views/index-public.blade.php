@@ -135,6 +135,10 @@
         });
     },
 });
+$.getJSON("{{ route('api.points') }}", function(data) {
+            point.addData(data);
+            map.addLayer(point);
+        });
 
 
 
